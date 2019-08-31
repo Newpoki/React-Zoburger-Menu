@@ -4,6 +4,7 @@ import { IInnerProps } from "./index.interface";
 import { Inner3dx } from "./Inner3dx";
 import { Inner3dxReverse } from "./Inner3dxReverse";
 import { Inner3dy } from "./Inner3dy";
+import { Inner3dyReverse } from "./Inner3dyReverse";
 
 export const Inner = ({ animation, isActive }: IInnerProps) => {
   switch (animation) {
@@ -15,6 +16,9 @@ export const Inner = ({ animation, isActive }: IInnerProps) => {
 
     case "3dy":
       return <Inner3dy isActive={isActive} />;
+
+    case "3dy-r":
+      return <Inner3dyReverse isActive={isActive} />;
 
     default:
       return <Inner3dx isActive={isActive} />;
