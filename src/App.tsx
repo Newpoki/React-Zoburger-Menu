@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <Zoburger
-      animation="arrowalt"
+      animation="arrowalt-r"
       isActive={isActive}
       onClick={handleZoburgerClick}
     />
