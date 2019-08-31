@@ -21,6 +21,7 @@ import { InnerElasticReverse } from "./InnerElasticReverse";
 import { InnerEmphatic } from "./InnerEmphatic";
 import { InnerEmphaticReverse } from "./InnerEmphaticReverse";
 import { InnerMinus } from "./InnerMinus";
+import { InnerSlider } from "./InnerSlider";
 
 export const Inner = ({ animation, isActive }: IInnerProps) => {
   switch (animation) {
@@ -83,6 +84,9 @@ export const Inner = ({ animation, isActive }: IInnerProps) => {
 
     case "minus":
       return <InnerMinus isActive={isActive} />;
+
+    case "slider":
+      return <InnerSlider isActive={isActive} />;
 
     default:
       return <Inner3dx isActive={isActive} />;
