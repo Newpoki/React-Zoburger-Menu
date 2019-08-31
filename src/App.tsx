@@ -5,7 +5,13 @@ const App = () => {
   const [isActive, toggleZoburger] = useState(false);
   const handleZoburgerClick = () => toggleZoburger(!isActive);
 
-  return <Zoburger animation="3dx" isActive={isActive} onClick={handleZoburgerClick} />;
+  return (
+    <Zoburger
+      animation="3dx"
+      isActive={isActive}
+      onClick={handleZoburgerClick}
+    />
+  );
 };
 
 export default App;
