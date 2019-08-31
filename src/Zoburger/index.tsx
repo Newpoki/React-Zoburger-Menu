@@ -12,7 +12,7 @@ export const Zoburger = ({ animation, isActive, onClick }: IZoburgerProps) => {
 
   return (
     <Button className={className} onClick={onClick} isActive={isActive}>
-      <Box>
+      <Box animation={animation}>
         <Inner
           animation={animation}
           className="hamburger-inner"
