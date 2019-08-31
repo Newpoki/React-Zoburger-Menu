@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Hamburger } from "./Hamburger";
+import { Zoburger } from "./Zoburger";
 
 const App = () => {
-  const [isActive, toggleHamburger] = useState(false);
-  const handleHamburgerClick = () => toggleHamburger(!isActive);
+  const [isActive, toggleZoburger] = useState(false);
+  const handleZoburgerClick = () => toggleZoburger(!isActive);
 
-  return <Hamburger animation="3dx" isActive={isActive} onClick={handleHamburgerClick} />;
+  return <Zoburger animation="3dx" isActive={isActive} onClick={handleZoburgerClick} />;
 };
 
 export default App;

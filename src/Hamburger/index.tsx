@@ -1,17 +1,17 @@
 import React from "react";
 
-import { IHamburgerProps } from "./index.interface";
-import "./hamburgers.css";
+import { IZoburgerProps } from "./index.interface";
+import "./Zoburgers.css";
 
-export const Hamburger = ({ animation, isActive, onClick }: IHamburgerProps) => {
+export const Zoburger = ({ animation, isActive, onClick }: IZoburgerProps) => {
   const className = isActive
-    ? `hamburger hamburger--${animation} is-active`
-    : `hamburger hamburger--${animation}`;
+    ? `Zoburger Zoburger--${animation} is-active`
+    : `Zoburger Zoburger--${animation}`;
 
   return (
     <button className={className} onClick={onClick}>
-      <span className="hamburger-box">
-        <span className="hamburger-inner"></span>
+      <span className="Zoburger-box">
+        <span className="Zoburger-inner"></span>
       </span>
     </button>
   );
