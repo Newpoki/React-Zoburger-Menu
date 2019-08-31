@@ -49,20 +49,10 @@
 /*
    * 3DXY Reverse
    */
-.hamburger-box {
-  perspective: 80px;
-}
 
 /*
    * Arrow
    */
-.hamburger--arrow.is-active .hamburger-inner::before {
-  transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
-}
-
-.hamburger--arrow.is-active .hamburger-inner::after {
-  transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
-}
 
 /*
    * Arrow Right
