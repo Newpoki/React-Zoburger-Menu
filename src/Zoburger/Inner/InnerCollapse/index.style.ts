@@ -3,10 +3,6 @@ import styled, { css } from "styled-components";
 import { InnerCommonStyle } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
-const commonCollapse = css`
-  transition-property: none;
-`;
-
 export const StyledCollapse = styled.span<Partial<IInnerProps>>`
   ${InnerCommonStyle}
   top: auto;
