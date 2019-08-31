@@ -24,6 +24,7 @@ import { InnerMinus } from "./InnerMinus";
 import { InnerSlider } from "./InnerSlider";
 import { InnerSliderReverse } from "./InnerSliderReverse";
 import { InnerSpin } from "./InnerSpin";
+import { InnerSpinReverse } from "./InnerSpinReverse";
 
 export const Inner = ({ animation, isActive }: IInnerProps) => {
   switch (animation) {
@@ -95,6 +96,9 @@ export const Inner = ({ animation, isActive }: IInnerProps) => {
 
     case "spin":
       return <InnerSpin isActive={isActive} />;
+
+    case "spin-r":
+      return <InnerSpinReverse isActive={isActive} />;
 
     default:
       return <Inner3dx isActive={isActive} />;
