@@ -13,40 +13,6 @@
 }
 
 /*
-   * 3DX
-   */
-.hamburger-box {
-  perspective: 80px;
-}
-
-/*
-   * 3DX Reverse
-   */
-.hamburger--3dx-r .hamburger-box {
-  perspective: 80px;
-}
-
-/*
-   * 3DY
-   */
-.hamburger-box {
-  perspective: 80px;
-}
-
-/*
-   * 3DY Reverse
-   */
-.hamburger-box {
-  perspective: 80px;
-}
-
-/* 3DXY
-   */
-.hamburger-box {
-  perspective: 80px;
-}
-
-/*
    * 3DXY Reverse
    */
 
@@ -95,16 +61,6 @@
 /*
    * Emphatic
    */
-.hamburger--emphatic {
-  overflow: hidden;
-}
-
-/*
-   * Emphatic Reverse
-   */
-.hamburger--emphatic-r {
-  overflow: hidden;
-}
 
 /*
    * Minus
