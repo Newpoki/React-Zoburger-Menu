@@ -15,6 +15,7 @@ import { InnerArrowTurn } from "./InnerArrowTurn";
 import { InnerArrowTurnReverse } from "./InnerArrowTurnReverse";
 import { InnerBoring } from "./InnerBoring";
 import { InnerCollapse } from "./InnerCollapse";
+import { InnerCollapseReverse } from "./InnerCollapseReverse";
 
 export const Inner = ({ animation, isActive }: IInnerProps) => {
   switch (animation) {
@@ -59,6 +60,9 @@ export const Inner = ({ animation, isActive }: IInnerProps) => {
 
     case "collapse":
       return <InnerCollapse isActive={isActive} />;
+
+    case "collapse-r":
+      return <InnerCollapseReverse isActive={isActive} />;
 
     default:
       return <Inner3dx isActive={isActive} />;
