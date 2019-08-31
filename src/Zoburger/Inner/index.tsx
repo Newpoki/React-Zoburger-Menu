@@ -29,6 +29,7 @@ import { InnerSpring } from "./InnerSpring";
 import { InnerSpringReverse } from "./InnerSpringReverse";
 import { InnerStand } from "./InnerStand";
 import { InnerStandReverse } from "./InnerStandReverse";
+import { InnerSqueeze } from "./InnerSqueeze";
 
 export const Inner = ({ animation, isActive }: IInnerProps) => {
   switch (animation) {
@@ -115,6 +116,9 @@ export const Inner = ({ animation, isActive }: IInnerProps) => {
 
     case "stand-r":
       return <InnerStandReverse isActive={isActive} />;
+
+    case "squeeze":
+      return <InnerSqueeze isActive={isActive} />;
 
     default:
       return <Inner3dx isActive={isActive} />;
