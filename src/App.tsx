@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <Zoburger
-      animation="vortex"
+      animation="vortex-r"
       isActive={isActive}
       onClick={handleZoburgerClick}
     />
