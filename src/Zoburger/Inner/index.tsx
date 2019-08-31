@@ -30,6 +30,7 @@ import { InnerSpringReverse } from "./InnerSpringReverse";
 import { InnerStand } from "./InnerStand";
 import { InnerStandReverse } from "./InnerStandReverse";
 import { InnerSqueeze } from "./InnerSqueeze";
+import { InnerVortex } from "./InnerVortex";
 
 export const Inner = ({ animation, isActive }: IInnerProps) => {
   switch (animation) {
@@ -119,6 +120,9 @@ export const Inner = ({ animation, isActive }: IInnerProps) => {
 
     case "squeeze":
       return <InnerSqueeze isActive={isActive} />;
+
+    case "vortex":
+      return <InnerVortex isActive={isActive} />;
 
     default:
       return <Inner3dx isActive={isActive} />;
