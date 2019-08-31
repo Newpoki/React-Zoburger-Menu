@@ -12,6 +12,7 @@ import { InnerArrowReverse } from "./InnerArrowReverse";
 import { InnerArrowAlt } from "./InnerArrowAlt";
 import { InnerArrowAltReverse } from "./InnerArrowAltReverse";
 import { InnerArrowTurn } from "./InnerArrowTurn";
+import { InnerArrowTurnReverse } from "./InnerArrowTurnReverse";
 
 export const Inner = ({ animation, isActive }: IInnerProps) => {
   switch (animation) {
@@ -47,6 +48,9 @@ export const Inner = ({ animation, isActive }: IInnerProps) => {
 
     case "arrowturn":
       return <InnerArrowTurn isActive={isActive} />;
+
+    case "arrowturn-r":
+      return <InnerArrowTurnReverse isActive={isActive} />;
 
     default:
       return <Inner3dx isActive={isActive} />;
