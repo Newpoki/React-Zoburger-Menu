@@ -1,6 +1,4 @@
-import styled, { css } from "styled-components";
-
-import { IInnerProps } from "./index.interface";
+import { css } from "styled-components";
 
 const BaseInnerCommonStyle = css`
   width: 40px;
@@ -33,8 +31,4 @@ export const InnerCommonStyle = css`
   &::after {
     bottom: -10px;
   }
-`;
-
-export const Inner = styled.span<IInnerProps>`
-  ${InnerCommonStyle}
 `;

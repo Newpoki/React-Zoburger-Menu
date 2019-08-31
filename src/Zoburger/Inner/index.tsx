@@ -1,8 +1,14 @@
 import React from "react";
 
-import { Inner as StyledInner } from "./index.style";
 import { IInnerProps } from "./index.interface";
+import { Inner3dx } from "./Inner3dx";
 
-export const Inner = ({ className }: IInnerProps) => {
-  return <StyledInner className={className} />;
+export const Inner = ({ animation, isActive }: IInnerProps) => {
+  switch (animation) {
+    case "3dx":
+      return <Inner3dx isActive={isActive} />;
+
+    default:
+      return <Inner3dx isActive={isActive} />;
+  }
 };
