@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <Zoburger
-      animation="spin-r"
+      animation="spring"
       isActive={isActive}
       onClick={handleZoburgerClick}
     />
