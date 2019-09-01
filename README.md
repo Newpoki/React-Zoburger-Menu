@@ -1,4 +1,4 @@
-# React Zoburger
+# React Zoburger Menu
 
 Based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/), this is a basic React component that render an Hamburger button with sweet animations.
 
