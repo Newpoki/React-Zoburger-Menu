@@ -11,10 +11,16 @@ export const Zoburger = ({
   className = "",
   color,
   isActive,
-  onClick
+  onClick,
+  ...others
 }: IZoburgerProps) => {
   return (
-    <Button className={className} onClick={onClick} isActive={isActive}>
+    <Button
+      className={className}
+      onClick={onClick}
+      isActive={isActive}
+      {...others}
+    >
       <Box
         activeColor={activeColor || color}
         animation={animation}

@@ -31,7 +31,8 @@ export type TAnimation =
   | "vortex"
   | "vortex-r";
 
-export interface IZoburgerProps {
+export interface IZoburgerProps
+  extends React.AllHTMLAttributes<HTMLButtonElement> {
   activeColor?: string;
   animation: TAnimation;
   className?: string;
