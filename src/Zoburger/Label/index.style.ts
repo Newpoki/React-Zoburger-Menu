@@ -5,6 +5,6 @@ export const Label = styled.span`
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
   transition: 0.2s;
 `;
