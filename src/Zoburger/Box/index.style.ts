@@ -14,12 +14,12 @@ export const Box = styled.span<IBoxProps>`
 
   ${BaseInner} {
     background-color: ${({ activeColor, color, isActive }) =>
-      activeColor && isActive ? color : activeColor};
+      activeColor && isActive ? activeColor : color};
 
     &::before,
     &::after {
       background-color: ${({ activeColor, color, isActive }) =>
-        activeColor && isActive ? color : activeColor};
+        activeColor && isActive ? activeColor : color};
     }
   }
 `;
