@@ -76,6 +76,37 @@ As this is based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/
 | onClick     | `function` | `true`   | `∅`               | Triggered function when hamburger is clicked                              |
 | ...others   | `any`      | `false`  | `∅`               | All the props that an HTML Button can receive (such as id, role, etc ...) |
 
+## Styling
+
+This component is really easy to customize. You can use `css` or [styled-components](https://styled-components.com) if you prefer.
+
+### Css
+
+All elements in component have className (+ the one that you can add) which you can target:
+
+- Button Element &rarr; `zoburger__button`
+- Box (the hamburger wrapper) &rarr; `zoburger__box`
+- Inner ( the bars) &rarr; `zoburger__inner`
+
+### Styled components
+
+If you prefer use `styled components`, you can import the styled components in order to customize them:
+
+```jsx
+import { StyledInner } from 'react-zoburger';
+import styled from 'styled-components;
+
+const Wrapper = styled.div`
+  ${StyledInner} {
+    height: 10px;
+
+    &::before, &::after {
+      height: 10px;
+    }
+  }
+`
+```
+
 ## Accessibility
 
 As suggest by [Jonathan Suh](https://jonsuh.com/), i'm using ARIA to make this component more accessible for disabled people with these attributes:
