@@ -9,15 +9,13 @@ export const Box = ({
   children,
   color,
   isActive
-}: IBoxProps) => {
-  return (
-    <StyledBox
-      activeColor={activeColor}
-      animation={animation}
-      color={color}
-      isActive={isActive}
-    >
-      {children}
-    </StyledBox>
-  );
-};
+}: IBoxProps) => (
+  <StyledBox
+    activeColor={activeColor}
+    animation={animation}
+    color={color}
+    isActive={isActive}
+  >
+    {children}
+  </StyledBox>
+);
