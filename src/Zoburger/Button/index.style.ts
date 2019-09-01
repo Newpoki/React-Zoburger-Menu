@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 export const Button = styled.button<IButtonProps>`
   padding: 15px 15px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
