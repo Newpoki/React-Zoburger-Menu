@@ -3,9 +3,20 @@ import React from "react";
 import { Box as StyledBox } from "./index.style";
 import { IBoxProps } from "./index.interface";
 
-export const Box = ({ animation, children, color }: IBoxProps) => {
+export const Box = ({
+  activeColor,
+  animation,
+  children,
+  color,
+  isActive
+}: IBoxProps) => {
   return (
-    <StyledBox animation={animation} color={color}>
+    <StyledBox
+      activeColor={activeColor}
+      animation={animation}
+      color={color}
+      isActive={isActive}
+    >
       {children}
     </StyledBox>
   );

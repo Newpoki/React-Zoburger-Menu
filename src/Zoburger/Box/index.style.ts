@@ -13,11 +13,13 @@ export const Box = styled.span<IBoxProps>`
   overflow: ${({ animation }) => getOverflow(animation)};
 
   ${BaseInner} {
-    background-color: ${({ color }) => color};
+    background-color: ${({ activeColor, color, isActive }) =>
+      activeColor && isActive ? color : activeColor};
 
     &::before,
     &::after {
-      background-color: ${({ color }) => color};
+      background-color: ${({ activeColor, color, isActive }) =>
+        activeColor && isActive ? color : activeColor};
     }
   }
 `;

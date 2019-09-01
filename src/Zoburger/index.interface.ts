@@ -32,6 +32,7 @@ export type TAnimation =
   | "vortex-r";
 
 export interface IZoburgerProps {
+  activeColor?: string;
   animation: TAnimation;
   color: string;
   isActive: boolean;

@@ -6,6 +6,7 @@ import { Box } from "./Box";
 import { Inner } from "./Inner";
 
 export const Zoburger = ({
+  activeColor,
   animation,
   color,
   isActive,
@@ -17,7 +18,12 @@ export const Zoburger = ({
 
   return (
     <Button className={className} onClick={onClick} isActive={isActive}>
-      <Box animation={animation} color={color}>
+      <Box
+        activeColor={activeColor || color}
+        animation={animation}
+        color={color}
+        isActive={isActive}
+      >
         <Inner
           animation={animation}
           className="hamburger-inner"
