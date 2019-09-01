@@ -9,7 +9,7 @@ export const Zoburger = ({
   activeColor,
   animation,
   className = "",
-  color,
+  color = "#000",
   isActive,
   onClick,
   ...others
