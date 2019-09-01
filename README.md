@@ -86,4 +86,4 @@ As suggest by [Jonathan Suh](https://jonsuh.com/), i'm using ARIA to make this c
 
 ## Browser Support
 
-Most animations are made with CSS3 `transforms`, so it's supported by most browsers BUT IE9, olders, and Opera Mini. [More informations.]('https://caniuse.com/#search=translate3d')
+Most animations are made with CSS3 `transforms` property, so it's supported by most browsers BUT IE9, olders, and Opera Mini. [More informations.]('https://caniuse.com/#search=translate3d')
