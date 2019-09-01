@@ -6,12 +6,6 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
-}
-
 /*
    * 3DXY Reverse
    */

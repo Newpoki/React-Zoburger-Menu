@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
-export const StyledCollapseReverse = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
+export const StyledCollapseReverse = styled(BaseInner)<Partial<IInnerProps>>`
   top: auto;
   bottom: 0;
   transition-duration: 0.13s;

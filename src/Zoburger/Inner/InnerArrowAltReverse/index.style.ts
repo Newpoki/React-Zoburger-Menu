@@ -1,11 +1,9 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
-export const StyledArrowAltReverse = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
-
+export const StyledArrowAltReverse = styled(BaseInner)<Partial<IInnerProps>>`
   &:before {
     transition: top 0.1s 0.1s ease,
       transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);

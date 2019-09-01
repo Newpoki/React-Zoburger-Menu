@@ -1,14 +1,13 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
 const commonBoring = css`
   transition-property: none;
 `;
 
-export const StyledBoring = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
+export const StyledBoring = styled(BaseInner)<Partial<IInnerProps>>`
   ${commonBoring}
 
   &:before, &:after {

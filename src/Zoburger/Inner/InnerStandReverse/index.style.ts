@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
-export const StyledStandReverse = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
+export const StyledStandReverse = styled(BaseInner)<Partial<IInnerProps>>`
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19),
     background-color 0s 0.075s linear;
 

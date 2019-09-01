@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
-export const StyledEmphatic = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
+export const StyledEmphatic = styled(BaseInner)<Partial<IInnerProps>>`
   transition: background-color 0.125s 0.175s ease-in;
 
   &::before {

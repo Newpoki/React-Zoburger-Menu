@@ -1,11 +1,9 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
-export const StyledArrow = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
-
+export const StyledArrow = styled(BaseInner)<Partial<IInnerProps>>`
   ${({ isActive }) =>
     isActive &&
     css`

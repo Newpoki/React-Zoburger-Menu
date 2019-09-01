@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
 const commonMinus = css`
@@ -12,9 +12,7 @@ const commonMinusIsActive = css`
   transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
 `;
 
-export const StyledMinus = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
-
+export const StyledMinus = styled(BaseInner)<Partial<IInnerProps>>`
   &::before,
   &::after {
     ${commonMinus}

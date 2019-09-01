@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { InnerCommonStyle } from "../index.style";
+import { BaseInner } from "../index.style";
 import { IInnerProps } from "../index.interface";
 
 const commonVortex = css`
@@ -13,8 +13,7 @@ const commonVortexIsActive = css`
   transition-delay: 0s;
 `;
 
-export const StyledVortex = styled.span<Partial<IInnerProps>>`
-  ${InnerCommonStyle}
+export const StyledVortex = styled(BaseInner)<Partial<IInnerProps>>`
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 
