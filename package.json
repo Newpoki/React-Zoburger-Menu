@@ -1,7 +1,10 @@
 {
   "name": "react-zoburger-menu",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "description": "A React component that render an Hamburger button with sweet animations.",
   "private": false,
+  "author": "Savelli Jason",
+  "homepage": "https://github.com/Newpoki/React-Zoburger-Menu#readme",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -36,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Newpoki/React-Zoburger-Menu"
   }
 }
