@@ -10,6 +10,7 @@ const App = () => {
       animation="vortex-r"
       isActive={isActive}
       onClick={handleZoburgerClick}
+      color="teal"
     />
   );
 };

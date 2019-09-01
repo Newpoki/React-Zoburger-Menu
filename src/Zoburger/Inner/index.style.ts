@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 const BaseInnerCommonStyle = css`
   width: 40px;
   height: 4px;
-  background-color: red;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
