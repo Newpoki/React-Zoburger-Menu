@@ -38,5 +38,6 @@ export interface IZoburgerProps
   className?: string;
   color?: string;
   isActive: boolean;
+  label?: string;
   onClick: () => void;
 }
