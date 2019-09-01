@@ -72,6 +72,7 @@ As this is based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/
 | className   | `string`   | `false`  | `an empty string` | An optional className that will go on every component's child             |
 | color       | `string`   | `false`  | `#000`            | The hamburger's color                                                     |
 | isActive    | `boolean`  | `true`   | `#000`            | Determine hamburger's state                                               |
+| label       | `string`   | `false`  | `∅`               | Text displayed next to the hamburger                                      |
 | onClick     | `function` | `true`   | `∅`               | Triggered function when hamburger is clicked                              |
 | ...others   | `any`      | `false`  | `∅`               | All the props that an HTML Button can receive (such as id, role, etc ...) |
 
