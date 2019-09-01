@@ -8,7 +8,6 @@ const App = () => {
   return (
     <Zoburger
       animation="vortex-r"
-      activeColor="red"
       isActive={isActive}
       onClick={handleZoburgerClick}
       color="teal"
