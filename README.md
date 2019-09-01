@@ -93,11 +93,11 @@ All elements in component have className (+ the one that you can add) which you 
 If you prefer use `styled components`, you can import the styled components in order to customize them:
 
 ```jsx
-import { StyledInner } from 'react-zoburger';
+import { Styled3dx } from 'react-zoburger';
 import styled from 'styled-components;
 
 const Wrapper = styled.div`
-  ${StyledInner} {
+  ${Styled3dx} {
     height: 10px;
 
     &::before, &::after {
