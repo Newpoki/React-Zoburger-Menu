@@ -34,6 +34,7 @@ export type TAnimation =
 export interface IZoburgerProps {
   activeColor?: string;
   animation: TAnimation;
+  className?: string;
   color: string;
   isActive: boolean;
   onClick: () => void;

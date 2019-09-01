@@ -8,14 +8,11 @@ import { Inner } from "./Inner";
 export const Zoburger = ({
   activeColor,
   animation,
+  className = "",
   color,
   isActive,
   onClick
 }: IZoburgerProps) => {
-  const className = isActive
-    ? `hamburger hamburger--${animation} is-active`
-    : `hamburger hamburger--${animation}`;
-
   return (
     <Button className={className} onClick={onClick} isActive={isActive}>
       <Box
@@ -24,11 +21,7 @@ export const Zoburger = ({
         color={color}
         isActive={isActive}
       >
-        <Inner
-          animation={animation}
-          className="hamburger-inner"
-          isActive={isActive}
-        />
+        <Inner animation={animation} isActive={isActive} />
       </Box>
     </Button>
   );
