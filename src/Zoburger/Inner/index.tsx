@@ -134,3 +134,35 @@ export const Inner = ({ animation, className, isActive }: IInnerProps) => {
       return <Inner3dx className={className} isActive={isActive} />;
   }
 };
+
+export { Styled3dx } from "./Inner3dx/index.style";
+export { Styled3dxReverse } from "./Inner3dxReverse/index.style";
+export { Styled3dy } from "./Inner3dy/index.style";
+export { Styled3dyReverse } from "./Inner3dyReverse/index.style";
+export { Styled3dxy } from "./Inner3dxy/index.style";
+export { Styled3dxyReverse } from "./Inner3dxyReverse/index.style";
+export { StyledArrow } from "./InnerArrow/index.style";
+export { StyledArrowReverse } from "./InnerArrowReverse/index.style";
+export { StyledArrowAlt } from "./InnerArrowAlt/index.style";
+export { StyledArrowAltReverse } from "./InnerArrowAltReverse/index.style";
+export { StyledArrowTurn } from "./InnerArrowTurn/index.style";
+export { StyledArrowTurnReverse } from "./InnerArrowTurnReverse/index.style";
+export { StyledBoring } from "./InnerBoring/index.style";
+export { StyledCollapse } from "./InnerCollapse/index.style";
+export { StyledCollapseReverse } from "./InnerCollapseReverse/index.style";
+export { StyledElastic } from "./InnerElastic/index.style";
+export { StyledElasticReverse } from "./InnerElasticReverse/index.style";
+export { StyledEmphatic } from "./InnerEmphatic/index.style";
+export { StyledEmphaticReverse } from "./InnerEmphaticReverse/index.style";
+export { StyledMinus } from "./InnerMinus/index.style";
+export { StyledSlider } from "./InnerSlider/index.style";
+export { StyledSliderReverse } from "./InnerSliderReverse/index.style";
+export { StyledSpin } from "./InnerSpin/index.style";
+export { StyledSpinReverse } from "./InnerSpinReverse/index.style";
+export { StyledSpring } from "./InnerSpring/index.style";
+export { StyledSpringReverse } from "./InnerSpringReverse/index.style";
+export { StyledStand } from "./InnerStand/index.style";
+export { StyledStandReverse } from "./InnerStandReverse/index.style";
+export { StyledSqueeze } from "./InnerSqueeze/index.style";
+export { StyledVortex } from "./InnerVortex/index.style";
+export { StyledVortexReverse } from "./InnerVortexReverse/index.style";

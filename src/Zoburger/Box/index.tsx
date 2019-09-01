@@ -3,7 +3,7 @@ import React from "react";
 import { Box as StyledBox } from "./index.style";
 import { IBoxProps } from "./index.interface";
 
-export const Box = ({
+const Box = ({
   activeColor,
   animation,
   children,
@@ -21,3 +21,5 @@ export const Box = ({
     {children}
   </StyledBox>
 );
+
+export { Box, StyledBox };
