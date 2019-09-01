@@ -7,12 +7,14 @@ export const Box = ({
   activeColor,
   animation,
   children,
+  className,
   color,
   isActive
 }: IBoxProps) => (
   <StyledBox
     activeColor={activeColor}
     animation={animation}
+    className={className}
     color={color}
     isActive={isActive}
   >

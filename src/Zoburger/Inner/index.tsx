@@ -33,102 +33,104 @@ import { InnerSqueeze } from "./InnerSqueeze";
 import { InnerVortex } from "./InnerVortex";
 import { InnerVortexReverse } from "./InnerVortexReverse";
 
-export const Inner = ({ animation, isActive }: IInnerProps) => {
+export const Inner = ({ animation, className, isActive }: IInnerProps) => {
   switch (animation) {
     case "3dx":
-      return <Inner3dx isActive={isActive} />;
+      return <Inner3dx className={className} isActive={isActive} />;
 
     case "3dx-r":
-      return <Inner3dxReverse isActive={isActive} />;
+      return <Inner3dxReverse className={className} isActive={isActive} />;
 
     case "3dy":
-      return <Inner3dy isActive={isActive} />;
+      return <Inner3dy className={className} isActive={isActive} />;
 
     case "3dy-r":
-      return <Inner3dyReverse isActive={isActive} />;
+      return <Inner3dyReverse className={className} isActive={isActive} />;
 
     case "3dxy":
-      return <Inner3dxy isActive={isActive} />;
+      return <Inner3dxy className={className} isActive={isActive} />;
 
     case "3dxy-r":
-      return <Inner3dxyReverse isActive={isActive} />;
+      return <Inner3dxyReverse className={className} isActive={isActive} />;
 
     case "arrow":
-      return <InnerArrow isActive={isActive} />;
+      return <InnerArrow className={className} isActive={isActive} />;
 
     case "arrow-r":
-      return <InnerArrowReverse isActive={isActive} />;
+      return <InnerArrowReverse className={className} isActive={isActive} />;
 
     case "arrowalt":
-      return <InnerArrowAlt isActive={isActive} />;
+      return <InnerArrowAlt className={className} isActive={isActive} />;
 
     case "arrowalt-r":
-      return <InnerArrowAltReverse isActive={isActive} />;
+      return <InnerArrowAltReverse className={className} isActive={isActive} />;
 
     case "arrowturn":
-      return <InnerArrowTurn isActive={isActive} />;
+      return <InnerArrowTurn className={className} isActive={isActive} />;
 
     case "arrowturn-r":
-      return <InnerArrowTurnReverse isActive={isActive} />;
+      return (
+        <InnerArrowTurnReverse className={className} isActive={isActive} />
+      );
 
     case "boring":
-      return <InnerBoring isActive={isActive} />;
+      return <InnerBoring className={className} isActive={isActive} />;
 
     case "collapse":
-      return <InnerCollapse isActive={isActive} />;
+      return <InnerCollapse className={className} isActive={isActive} />;
 
     case "collapse-r":
-      return <InnerCollapseReverse isActive={isActive} />;
+      return <InnerCollapseReverse className={className} isActive={isActive} />;
 
     case "elastic":
-      return <InnerElastic isActive={isActive} />;
+      return <InnerElastic className={className} isActive={isActive} />;
 
     case "elastic-r":
-      return <InnerElasticReverse isActive={isActive} />;
+      return <InnerElasticReverse className={className} isActive={isActive} />;
 
     case "emphatic":
-      return <InnerEmphatic isActive={isActive} />;
+      return <InnerEmphatic className={className} isActive={isActive} />;
 
     case "emphatic-r":
-      return <InnerEmphaticReverse isActive={isActive} />;
+      return <InnerEmphaticReverse className={className} isActive={isActive} />;
 
     case "minus":
-      return <InnerMinus isActive={isActive} />;
+      return <InnerMinus className={className} isActive={isActive} />;
 
     case "slider":
-      return <InnerSlider isActive={isActive} />;
+      return <InnerSlider className={className} isActive={isActive} />;
 
     case "slider-r":
-      return <InnerSliderReverse isActive={isActive} />;
+      return <InnerSliderReverse className={className} isActive={isActive} />;
 
     case "spin":
-      return <InnerSpin isActive={isActive} />;
+      return <InnerSpin className={className} isActive={isActive} />;
 
     case "spin-r":
-      return <InnerSpinReverse isActive={isActive} />;
+      return <InnerSpinReverse className={className} isActive={isActive} />;
 
     case "spring":
-      return <InnerSpring isActive={isActive} />;
+      return <InnerSpring className={className} isActive={isActive} />;
 
     case "spring-r":
-      return <InnerSpringReverse isActive={isActive} />;
+      return <InnerSpringReverse className={className} isActive={isActive} />;
 
     case "stand":
-      return <InnerStand isActive={isActive} />;
+      return <InnerStand className={className} isActive={isActive} />;
 
     case "stand-r":
-      return <InnerStandReverse isActive={isActive} />;
+      return <InnerStandReverse className={className} isActive={isActive} />;
 
     case "squeeze":
-      return <InnerSqueeze isActive={isActive} />;
+      return <InnerSqueeze className={className} isActive={isActive} />;
 
     case "vortex":
-      return <InnerVortex isActive={isActive} />;
+      return <InnerVortex className={className} isActive={isActive} />;
 
     case "vortex-r":
-      return <InnerVortexReverse isActive={isActive} />;
+      return <InnerVortexReverse className={className} isActive={isActive} />;
 
     default:
-      return <Inner3dx isActive={isActive} />;
+      return <Inner3dx className={className} isActive={isActive} />;
   }
 };

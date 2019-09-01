@@ -10,6 +10,8 @@ const BaseInnerCommonStyle = css`
   transition-timing-function: ease;
 `;
 
+// Can't give className attrs because using a styled of this
+// So className is erased
 export const BaseInner = styled.span`
   ${BaseInnerCommonStyle}
   display: block;
