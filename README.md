@@ -1,6 +1,9 @@
 # React Zoburger Menu
 
-Based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/), this is a basic React component that render an Hamburger button with sweet animations.
+A React component that render an Hamburger button with sweet animations.
+Based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/).
+
+[React Zoburger Menu on NPM.]('https://www.npmjs.com/package/react-zoburger-menu')
 
 ## Demo
 
@@ -111,7 +114,7 @@ const Wrapper = styled.div`
 
 ## Accessibility
 
-As suggest by [Jonathan Suh](https://jonsuh.com/), i'm using ARIA to make this component more accessible for disabled people with these attributes:
+As suggest by [Jonathan Suh](https://jonsuh.com/), i'm using ARIA to make this component more accessible for people with disabilities, with these attributes:
 
 - `aria-label="Menu"`
 - `aria-controls="navigation"`
