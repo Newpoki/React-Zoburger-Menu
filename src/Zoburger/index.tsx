@@ -4,6 +4,7 @@ import { IZoburgerProps } from "./index.interface";
 import { Button } from "./Button";
 import { Box } from "./Box";
 import { Inner } from "./Inner";
+import { Label } from "./Label";
 
 export const Zoburger = ({
   activeColor,
@@ -35,7 +36,11 @@ export const Zoburger = ({
           isActive={isActive}
         />
       </Box>
-      {label && <span>{label}</span>}
+      {label && (
+        <Label color={isActive && activeColor ? activeColor : color}>
+          {label}
+        </Label>
+      )}
     </>
   </Button>
 );
