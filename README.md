@@ -1,44 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Zoburger
 
-## Available Scripts
+Based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/), this is a basic React component that render an Hamburger button with sweet animations.
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+[Click here to test library.]('https://newpoki.github.io/newpoki/#/outils/calculer-consommation-carburant')
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Npm
 
-### `npm test`
+`npm i --save react-zoburger`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Yarn
 
-### `npm run build`
+`add react-zoburger`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```tsx
+<Zoburger
+  animation="vortex-r"
+  isActive={isActive}
+  onClick={handleZoburgerClick}
+  color="teal"
+/>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Animation List
 
-### `npm run eject`
+As this is based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/), the animations' name are the same, here is the list:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- 3dx
+- 3dx-r
+- 3dy
+- 3dy-r
+- 3dxy
+- 3dxy-r
+- arrow
+- arrow-r
+- arrowalt
+- arrowalt-r
+- arrowturn
+- arrowturn-r
+- boring
+- collapse
+- collapse-r
+- elastic
+- elastic-r
+- emphatic
+- emphatic-r
+- minus
+- slider
+- slider-r
+- spin
+- spin-r
+- spring
+- spring-r
+- stand
+- stand-r
+- squeeze
+- vortex
+- vortex-r
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Props
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Props       | Type       | Required | Default           | Description                                                               |
+| ----------- | ---------- | -------- | ----------------- | ------------------------------------------------------------------------- |
+| activeColor | `string`   | `false`  | `Same as color`   | The hamburger's color when `isActive is true`                             |
+| animation   | `string`   | `true`   | `∅`               | The animation mode                                                        |
+| className   | `string`   | `false`  | `an empty string` | An optional className that will go on every component's child             |
+| color       | `string`   | `false`  | `#000`            | The hamburger's color                                                     |
+| isActive    | `boolean`  | `true`   | `#000`            | Determine hamburger's state                                               |
+| onClick     | `function` | `true`   | `∅`               | Triggered function when hamburger is clicked                              |
+| ...others   | `any`      | `false`  | `∅`               | All the props that an HTML Button can receive (such as id, role, etc ...) |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Accessibility
 
-## Learn More
+As suggest by [Jonathan Suh](https://jonsuh.com/), i'm using ARIA to make this component more accessible for disabled people with these attributes:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `aria-label="Menu"`
+- `aria-controls="navigation"`
+- `aria-expanded={isActive}`
+- `type="button"`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Browser Support
+
+Most animations are made with CSS3 `transforms`, so it's supported by most browsers BUT IE9, olders, and Opera Mini. [More informations.]('https://caniuse.com/#search=translate3d')
