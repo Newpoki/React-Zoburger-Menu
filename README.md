@@ -14,7 +14,7 @@ Based on [Jonathan Suh css hamburgers](https://jonsuh.com/hamburgers/), this is 
 
 ### Yarn
 
-`add react-zoburger`
+`yarn add react-zoburger`
 
 ## Usage
 
