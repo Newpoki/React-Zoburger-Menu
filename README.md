@@ -10,21 +10,23 @@ Click [here](https://newpoki.github.io/newpoki/#/outils/calculer-consommation-ca
 
 ### Npm
 
-`npm i --save react-zoburger`
+`npm i --save react-zoburger-menu`
 
 ### Yarn
 
-`yarn add react-zoburger`
+`yarn add react-zoburger-menu`
 
 ## Usage
 
 ```tsx
+import { Zoburger } from "react-zoburger-menu";
+
 <Zoburger
   animation="vortex-r"
   isActive={isActive}
   onClick={handleZoburgerClick}
   color="teal"
-/>
+/>;
 ```
 
 ## Animation List
