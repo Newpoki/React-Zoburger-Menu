@@ -1,11 +1,12 @@
 {
   "name": "react-zoburger-menu",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React component that render an Hamburger button with sweet animations.",
   "private": false,
   "author": "Savelli Jason",
   "homepage": "https://github.com/Newpoki/React-Zoburger-Menu#readme",
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "styled-components": "^4.3.2"
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && mkdir dist && NODE_ENV=production npx babel src/Zoburger --out-dir dist --extensions \".tsx, .ts, .js\" --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,5 +46,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Newpoki/React-Zoburger-Menu"
-  }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js"
 }
