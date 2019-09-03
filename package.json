@@ -1,6 +1,6 @@
 {
   "name": "react-zoburger-menu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React component that render an Hamburger button with sweet animations.",
   "private": false,
   "author": "Savelli Jason",
